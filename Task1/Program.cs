@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Ex1
+namespace Task1
 {
     static class Program
     {

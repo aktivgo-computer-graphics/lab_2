@@ -4,10 +4,10 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{F58CF106-5C2C-4073-83DB-3EAA0E2B33E5}</ProjectGuid>
+        <ProjectGuid>{F871283F-1192-44FB-B1E9-04E4FCE3777F}</ProjectGuid>
         <OutputType>WinExe</OutputType>
-        <RootNamespace>Ex1</RootNamespace>
-        <AssemblyName>Ex1</AssemblyName>
+        <RootNamespace>Task2</RootNamespace>
+        <AssemblyName>Task2</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,10 +47,14 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Form1.cs" />
-        <Compile Include="Form1.Designer.cs" />
+        <Compile Include="Form1.Designer.cs">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <EmbeddedResource Include="Form1.resx" />
+        <EmbeddedResource Include="Form1.resx">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
